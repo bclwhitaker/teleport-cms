@@ -51,7 +51,12 @@ app.post('/user/:userId/playlist/:playlistId', function (req, res) {
       req.connection.destroy();
   });
   req.on('end', function () {
-    var media = JSON.parse(body);
+    try {
+      var media = JSON.parse(body);
+    } catch(error) {
+      return res.send(400, 'Could not parse the JSON for the media.  Please make sure JSON it is well formatted.');
+    }
+    
     addMedia(req.params.userId, req.params.playlistId, JSON.parse(body), function(error, successMessage){
       if (!error) {
         res.send(200, successMessage);
