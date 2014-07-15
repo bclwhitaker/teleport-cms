@@ -1,0 +1,26 @@
+{
+  "name": "teleport-cms",
+  "version": "0.0.0",
+  "description": "demo cms for teleport playlist data",
+  "main": "src/server.js",
+  "scripts": {
+    "start": "node src/server.js",
+    "test": "mocha tests/server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/bclwhitaker/teleport-cms.git"
+  },
+  "author": "Lee Whitaker",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/bclwhitaker/teleport-cms/issues"
+  },
+  "homepage": "https://github.com/bclwhitaker/teleport-cms",
+  "dependencies": {
+    "body-parser": "^1.4.3",
+    "compression": "^1.0.8",
+    "mocha": "^1.20.1",
+    "sinon": "^1.10.3"
+  }
+}
