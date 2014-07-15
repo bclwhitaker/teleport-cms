@@ -20,7 +20,9 @@
   "dependencies": {
     "body-parser": "^1.4.3",
     "compression": "^1.0.8",
+    "express": "^4.6.1",
     "mocha": "^1.20.1",
+    "mongoose": "^3.8.13",
     "sinon": "^1.10.3"
   }
 }
